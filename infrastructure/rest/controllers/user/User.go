@@ -3,10 +3,10 @@ package user
 
 import (
 	"errors"
-	useCaseUser "github.com/gbrayhan/microservices-go/application/usecases/user"
-	domainErrors "github.com/gbrayhan/microservices-go/domain/errors"
-	"github.com/gbrayhan/microservices-go/infrastructure/rest/controllers"
 	"github.com/gin-gonic/gin"
+	useCaseUser "microservices-go/application/usecases/user"
+	domainErrors "microservices-go/domain/errors"
+	"microservices-go/infrastructure/rest/controllers"
 	"net/http"
 	"strconv"
 )

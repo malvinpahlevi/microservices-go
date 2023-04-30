@@ -2,10 +2,10 @@
 package adapter
 
 import (
-	medicineService "github.com/gbrayhan/microservices-go/application/usecases/medicine"
-	medicineRepository "github.com/gbrayhan/microservices-go/infrastructure/repository/medicine"
-	medicineController "github.com/gbrayhan/microservices-go/infrastructure/rest/controllers/medicine"
 	"gorm.io/gorm"
+	medicineService "microservices-go/application/usecases/medicine"
+	medicineRepository "microservices-go/infrastructure/repository/medicine"
+	medicineController "microservices-go/infrastructure/rest/controllers/medicine"
 )
 
 // MedicineAdapter is a function that returns a medicine controller

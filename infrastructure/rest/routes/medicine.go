@@ -2,8 +2,8 @@
 package routes
 
 import (
-	medicineController "github.com/gbrayhan/microservices-go/infrastructure/rest/controllers/medicine"
 	"github.com/gin-gonic/gin"
+	medicineController "microservices-go/infrastructure/rest/controllers/medicine"
 )
 
 // MedicineRoutes is a function that contains all medicine routes

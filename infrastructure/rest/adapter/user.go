@@ -2,10 +2,10 @@
 package adapter
 
 import (
-	userService "github.com/gbrayhan/microservices-go/application/usecases/user"
-	userRepository "github.com/gbrayhan/microservices-go/infrastructure/repository/user"
-	userController "github.com/gbrayhan/microservices-go/infrastructure/rest/controllers/user"
 	"gorm.io/gorm"
+	userService "microservices-go/application/usecases/user"
+	userRepository "microservices-go/infrastructure/repository/user"
+	userController "microservices-go/infrastructure/rest/controllers/user"
 )
 
 // UserAdapter is a function that returns a user controller

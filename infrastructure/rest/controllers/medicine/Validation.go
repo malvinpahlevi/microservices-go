@@ -4,8 +4,8 @@ package medicine
 import (
 	"errors"
 	"fmt"
-	domainErrors "github.com/gbrayhan/microservices-go/domain/errors"
 	"github.com/go-playground/validator/v10"
+	domainErrors "microservices-go/domain/errors"
 	"strings"
 )
 

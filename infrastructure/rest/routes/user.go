@@ -2,15 +2,14 @@
 package routes
 
 import (
-	userController "github.com/gbrayhan/microservices-go/infrastructure/rest/controllers/user"
-	"github.com/gbrayhan/microservices-go/infrastructure/rest/middlewares"
 	"github.com/gin-gonic/gin"
+	userController "microservices-go/infrastructure/rest/controllers/user"
 )
 
 // UserRoutes is a function that contains all routes of the user
 func UserRoutes(router *gin.RouterGroup, controller *userController.Controller) {
 	routerAuth := router.Group("/user")
-	routerAuth.Use(middlewares.AuthJWTMiddleware())
+	//routerAuth.Use(middlewares.AuthJWTMiddleware())
 	{
 		routerAuth.POST("/", controller.NewUser)
 		routerAuth.GET("/:id", controller.GetUsersByID)

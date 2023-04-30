@@ -4,13 +4,13 @@ package middlewares
 import (
 	"bytes"
 	"fmt"
-	"github.com/gbrayhan/microservices-go/application/services"
 	"io"
+	"microservices-go/application/services"
 	"time"
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/gbrayhan/microservices-go/utils"
+	"microservices-go/utils"
 )
 
 type bodyLogWriter struct {

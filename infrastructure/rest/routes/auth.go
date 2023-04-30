@@ -2,8 +2,8 @@
 package routes
 
 import (
-	authController "github.com/gbrayhan/microservices-go/infrastructure/rest/controllers/auth"
 	"github.com/gin-gonic/gin"
+	authController "microservices-go/infrastructure/rest/controllers/auth"
 )
 
 // AuthRoutes is a function that contains all routes of the auth

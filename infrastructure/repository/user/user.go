@@ -3,9 +3,9 @@ package user
 
 import (
 	"encoding/json"
-	domainErrors "github.com/gbrayhan/microservices-go/domain/errors"
-	domainUser "github.com/gbrayhan/microservices-go/domain/user"
 	"gorm.io/gorm"
+	domainErrors "microservices-go/domain/errors"
+	domainUser "microservices-go/domain/user"
 )
 
 // Repository is a struct that contains the database implementation for user entity

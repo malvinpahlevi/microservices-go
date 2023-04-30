@@ -2,7 +2,7 @@
 package user
 
 import (
-	domainUser "github.com/gbrayhan/microservices-go/domain/user"
+	domainUser "microservices-go/domain/user"
 )
 
 // NewUser is the structure for a new user

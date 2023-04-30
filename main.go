@@ -3,9 +3,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/gbrayhan/microservices-go/infrastructure/repository/config"
-	errorsController "github.com/gbrayhan/microservices-go/infrastructure/rest/controllers/errors"
-	"github.com/gbrayhan/microservices-go/infrastructure/rest/middlewares"
+	"microservices-go/infrastructure/repository/config"
+	errorsController "microservices-go/infrastructure/rest/controllers/errors"
+	"microservices-go/infrastructure/rest/middlewares"
 	"net/http"
 	"strings"
 	"time"
@@ -15,7 +15,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
 
-	"github.com/gbrayhan/microservices-go/infrastructure/rest/routes"
+	"microservices-go/infrastructure/rest/routes"
 )
 
 func main() {

@@ -4,8 +4,8 @@ package errors
 import (
 	"net/http"
 
-	domainErrors "github.com/gbrayhan/microservices-go/domain/errors"
 	"github.com/gin-gonic/gin"
+	domainErrors "microservices-go/domain/errors"
 )
 
 // MessagesResponse is a struct that contains the response body for the message

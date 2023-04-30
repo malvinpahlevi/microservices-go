@@ -2,13 +2,13 @@
 package routes
 
 import (
-	// swaggerFiles for documentation
-	_ "github.com/gbrayhan/microservices-go/docs"
-	"github.com/gbrayhan/microservices-go/infrastructure/rest/adapter"
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 	"gorm.io/gorm"
+	// swaggerFiles for documentation
+	_ "microservices-go/docs"
+	"microservices-go/infrastructure/rest/adapter"
 )
 
 // Security is a struct that contains the security of the application

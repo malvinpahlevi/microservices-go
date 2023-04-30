@@ -2,9 +2,9 @@
 package user
 
 import (
-	userDomain "github.com/gbrayhan/microservices-go/domain/user"
-	userRepository "github.com/gbrayhan/microservices-go/infrastructure/repository/user"
 	"golang.org/x/crypto/bcrypt"
+	userDomain "microservices-go/domain/user"
+	userRepository "microservices-go/infrastructure/repository/user"
 )
 
 // Service is a struct that contains the repository implementation for user use case

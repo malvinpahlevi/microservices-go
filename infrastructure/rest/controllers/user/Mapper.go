@@ -2,14 +2,21 @@
 package user
 
 import (
-	userUseCase "github.com/gbrayhan/microservices-go/application/usecases/user"
-	userDomain "github.com/gbrayhan/microservices-go/domain/user"
+	userUseCase "microservices-go/application/usecases/user"
+	userDomain "microservices-go/domain/user"
 )
 
 func domainToResponseMapper(userDomain *userDomain.User) (createUserResponse *ResponseUser) {
-	createUserResponse = &ResponseUser{ID: userDomain.ID, UserName: userDomain.UserName,
-		Email: userDomain.Email, FirstName: userDomain.FirstName, LastName: userDomain.LastName,
-		Status: userDomain.Status, CreatedAt: userDomain.CreatedAt, UpdatedAt: userDomain.UpdatedAt}
+	createUserResponse = &ResponseUser{
+		ID:        userDomain.ID,
+		UserName:  userDomain.UserName,
+		Email:     userDomain.Email,
+		FirstName: userDomain.FirstName,
+		LastName:  userDomain.LastName,
+		Status:    userDomain.Status,
+		CreatedAt: userDomain.CreatedAt,
+		UpdatedAt: userDomain.UpdatedAt,
+	}
 
 	return
 }

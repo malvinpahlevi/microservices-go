@@ -2,10 +2,10 @@
 package auth
 
 import (
-	useCaseAuth "github.com/gbrayhan/microservices-go/application/usecases/auth"
-	domainErrors "github.com/gbrayhan/microservices-go/domain/errors"
-	"github.com/gbrayhan/microservices-go/infrastructure/rest/controllers"
 	"github.com/gin-gonic/gin"
+	useCaseAuth "microservices-go/application/usecases/auth"
+	domainErrors "microservices-go/domain/errors"
+	"microservices-go/infrastructure/rest/controllers"
 	"net/http"
 )
 

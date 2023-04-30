@@ -2,7 +2,7 @@
 package medicine
 
 import (
-	domainMedicine "github.com/gbrayhan/microservices-go/domain/medicine"
+	domainMedicine "microservices-go/domain/medicine"
 	"time"
 )
 

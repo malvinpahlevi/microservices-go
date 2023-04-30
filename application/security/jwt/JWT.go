@@ -4,9 +4,9 @@ package jwt
 import (
 	"errors"
 	"fmt"
-	domainErrors "github.com/gbrayhan/microservices-go/domain/errors"
 	"github.com/golang-jwt/jwt/v4"
 	"github.com/spf13/viper"
+	domainErrors "microservices-go/domain/errors"
 	"strconv"
 	"time"
 )

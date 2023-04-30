@@ -1,6 +1,7 @@
-module github.com/gbrayhan/microservices-go
+module microservices-go
 
-go 1.20
+
+go 1.19
 
 require (
 	github.com/aviddiviner/gin-limit v0.0.0-20170918012823-43b5f79762c1

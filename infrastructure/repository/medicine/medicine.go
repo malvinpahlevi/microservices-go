@@ -3,9 +3,9 @@ package medicine
 
 import (
 	"encoding/json"
-	domainErrors "github.com/gbrayhan/microservices-go/domain/errors"
-	domainMedicine "github.com/gbrayhan/microservices-go/domain/medicine"
 	"gorm.io/gorm"
+	domainErrors "microservices-go/domain/errors"
+	domainMedicine "microservices-go/domain/medicine"
 )
 
 // Repository is a struct that contains the database implementation for medicine entity

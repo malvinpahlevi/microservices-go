@@ -3,10 +3,10 @@ package auth
 
 import (
 	"errors"
-	"github.com/gbrayhan/microservices-go/application/security/jwt"
-	errorsDomain "github.com/gbrayhan/microservices-go/domain/errors"
-	userRepository "github.com/gbrayhan/microservices-go/infrastructure/repository/user"
 	"golang.org/x/crypto/bcrypt"
+	"microservices-go/application/security/jwt"
+	errorsDomain "microservices-go/domain/errors"
+	userRepository "microservices-go/infrastructure/repository/user"
 	"time"
 )
 
