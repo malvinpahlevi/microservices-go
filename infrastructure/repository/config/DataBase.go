@@ -2,6 +2,7 @@
 package config
 
 import (
+	"fmt"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -53,6 +54,8 @@ func GormOpen() (gormDB *gorm.DB, err error) {
 	if err = gormDB.Raw("SELECT 1").Scan(&result).Error; err != nil {
 		return nil, err
 	}
+
+	fmt.Printf("Successfully Conneceted to Database !")
 
 	return
 }

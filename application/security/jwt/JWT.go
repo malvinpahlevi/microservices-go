@@ -20,7 +20,7 @@ const (
 type AppToken struct {
 	Token          string    `json:"token"`
 	TokenType      string    `json:"type"`
-	ExpirationTime time.Time `json:"expitationTime"`
+	ExpirationTime time.Time `json:"expiration_time"`
 }
 
 // Claims is a struct that contains the claims of the JWT

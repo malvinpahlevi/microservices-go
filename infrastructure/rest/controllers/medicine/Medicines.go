@@ -3,12 +3,11 @@ package medicine
 
 import (
 	"errors"
+	"github.com/gin-gonic/gin"
 	useCaseMedicine "microservices-go/application/usecases/medicine"
 	domainError "microservices-go/domain/errors"
 	domainMedicine "microservices-go/domain/medicine"
 	"microservices-go/infrastructure/rest/controllers"
-
-	"github.com/gin-gonic/gin"
 	"net/http"
 	"strconv"
 )

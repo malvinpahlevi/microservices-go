@@ -37,7 +37,7 @@ type Security struct {
 // @host localhost:8080
 // @BasePath /v1
 func ApplicationV1Router(router *gin.Engine, db *gorm.DB) {
-	routerV1 := router.Group("/v1")
+	routerV1 := router.Group("/api/v1")
 
 	{
 		// Documentation Swagger
@@ -48,5 +48,6 @@ func ApplicationV1Router(router *gin.Engine, db *gorm.DB) {
 		AuthRoutes(routerV1, adapter.AuthAdapter(db))
 		UserRoutes(routerV1, adapter.UserAdapter(db))
 		MedicineRoutes(routerV1, adapter.MedicineAdapter(db))
+		MasterTokenRoutes(routerV1, adapter.MasterTokenAdapter(db))
 	}
 }
